@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body> 
+		<h1>テキストボックスの値をHTMLに反映 JQueryの場合</h1>
+        <input type="text" id="jqtext">
+        <div id="iqprint"></div>
+        <script>
+            $(function(){
+                 $("#jqtext").on("keyup", function(){
+                     $("#iqprint").text($("#jqtext").val());
+                 });
+            });
+	</script>
+	</body>
+</html>
+

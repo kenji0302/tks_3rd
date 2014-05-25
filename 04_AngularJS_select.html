@@ -1,0 +1,19 @@
+<html ng-app>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	</head>
+    <body>
+    <h1>セレクトメニューを生成</h1>
+        <div ng-controller="exampleCtrl">
+            <select ng-model="selectedItem" ng-options="item for item in items"></select>
+        </div>    
+        <script>
+        function exampleCtrl($scope) {
+            $scope.items = ["焼き肉", "たこ焼き", "鍋"];
+            $scope.selectedItem = "たこ焼き";
+        }
+        </script>
+	</body>
+</html>
+
